@@ -1,0 +1,346 @@
+.btn-animation-1 {
+
+    &:hover {
+        animation: scale .5s ease-in-out;
+    }
+}
+
+.btn-animation-2 {
+
+    &:hover {
+        animation-name: heartBeat;
+        animation: heartBeat .7s alternate;
+        animation-iteration-count: 2;
+    }
+}
+
+
+.btn-animation-nope {
+
+    &:hover {
+        animation: nope 1s ease-in;
+    }
+}
+
+.btn-banner {
+    font-size: 1.2em;
+    font-family: 'FSAlbertBold', sans-serif;
+    text-align: center;
+    display: inline-block;
+    // max-width: 345px;
+    width: 100%;
+    // text-transform: uppercase;
+    border-radius: 29px;
+    padding: .8rem .6rem .8rem 1rem;
+    border: 2px solid $color-navy-blue-5;
+    color: $color-navy-blue-5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        color: $color-navy-blue-5;
+    }
+}
+
+.btn-register {
+    font-size: 1.1em;
+    font-family: 'OpenSansBold' ,sans-serif;
+    text-align: center;
+    // max-width: 340px;
+    width: 100%;
+    // text-transform: uppercase;
+    border-radius: 29px;
+    padding: 6px 9px 6px 20px;
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    background-color:$color-blue-8;
+    justify-content: center;
+    justify-content: space-between;
+
+    &:hover {
+        color: $color-white;
+    }
+
+    &__banner__icon{
+        border-radius: 50%;
+        border: 2px solid $color-white;
+        padding: 6px 6px;
+        color: $color-blue-8;
+        background-color: $color-white;
+        font-size: 20px;
+    }
+}
+
+
+.btn-speaker-date {
+    font-size: 17px;
+    font-family: 'GraphieBold', sans-serif;
+    text-align: center;
+    display: inline-block;
+    width: 275px;
+    height: 47px;
+    border-radius: 25px;
+    padding: 12px;
+    cursor: pointer;
+    background-color: $color-white;
+    color: $color-red;
+    border: 2px solid $color-red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        color: $color-red;
+    }
+
+    &--active {
+        transition: all .5s ease-in;
+        background-color: $color-red;
+        color: $color-white;
+        border: 2px solid $color-red;
+
+        &:hover{
+            color: $color-white;
+        }
+    }
+}
+
+.btn-bio {
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 16px;
+    text-align: center;
+    padding: 3px 18px;
+    transition: all .5s ease-in-out;
+    background-color:transparent;
+    border: 1px solid #2A276E;
+    color: #2A276E;
+
+    &:hover {
+        box-shadow: 0px 0px 20px rgba(20, 144, 223, 0.38);
+    }
+}
+
+.btn-card-time {
+    font-size: 17px;
+    font-family: 'FSAlbertBold', sans-serif;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 20px rgba(20, 144, 223, 0.38);
+    width: 252px;
+    height: 48px;
+    border-radius: 29px;
+    transition: transform 0.5s;
+    position: absolute;
+    bottom: -17px;
+    padding: 12px;
+
+    @media screen and (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+        left: 50%;
+        transform: translate(-50%, 0px);
+    }
+
+    &:hover {
+        color: $color-white;
+        text-decoration: none;
+        // transform: scale(1.04);
+        transform: translateY(-30px);
+
+        @media screen and (-ms-high-contrast: active),
+        (-ms-high-contrast: none) {
+            left: 50%;
+            transform: translate(-50%, 0px);
+        }
+    }
+}
+
+.btn-schedule {
+    font-size: 17px;
+    font-family: 'FSAlbertBold', sans-serif;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 29px;
+    transition: box-shadow .2s ease-in, transform .3s ease-in-out;
+    cursor: pointer;
+
+    &--active {
+        transition: all .5s ease-in;
+        background-color: $color-white;
+        color: $color-navy-blue;
+        border: 2px solid $color-white;
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 20px rgba(20, 144, 223, 0.38);
+        transform: scale(1.03);
+    }
+}
+
+
+.btn-login {
+    font-size: 17px;
+    font-family: 'LatoBold' ,sans-serif;
+    text-align: center;
+    // text-transform: uppercase;
+    width: 100%;
+    margin: 0 auto;
+    padding: .5rem .6rem .5rem 1rem;
+    border-radius: 29px;
+    box-shadow: 0px 0px 20px rgba(20, 144, 223, 0.38);
+    background-color:$color-blue-8;
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+
+    &:hover {
+        color: $color-white;
+    }
+}
+
+.btn-login-page {
+    font-size: 17px;
+    font-family: 'LatoBold' ,sans-serif;
+    text-align: center;
+    // text-transform: uppercase;
+    width: 100%;
+    max-width: 245px;
+    margin: 0 auto;
+    padding: .8rem .6rem .8rem 1rem;
+    border-radius: 29px;
+    box-shadow: 0px 0px 20px rgba(20, 144, 223, 0.38);
+    background-color:$color-blue-8;
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+
+    &:hover {
+        color: $color-white;
+    }
+}
+
+.btn-back-home {
+    font-size: 14px;
+    font-family: 'GraphieBold' ,sans-serif;
+    text-align: center;
+    // text-transform: uppercase;
+    padding: .6rem;
+    border-radius: 29px;
+    height: 34px;
+    transition: all .3s;
+    box-shadow: 0px 0px 10px #6291DD76;
+    width: 155px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:$color-blue-10;
+    border: 2px solid $color-blue-10;
+
+
+    &:hover {
+        transform: scale(1.03);
+        color: $color-blue-10;
+    }
+
+}
+
+.btn-upcoming-register {
+    font-size: 13px;
+    font-family: 'FSAlbertBold', sans-serif;
+    text-align: center;
+    padding: .7rem;
+    width: 107px;
+    height: 37px;
+    display: inline-block;
+    box-shadow: 0px 0px 20px rgba(20, 144, 223, 0.38);
+    border-radius: 29px;
+    transition: transform .4s cubic-bezier(0, 1, 0, 0);
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+.btn-coming-soon {
+    font-size: 13px;
+    font-family: 'FSAlbertBold', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    padding: .6rem;
+    border-radius: 29px;
+    width: 266px;
+    height: 37px;
+    display: inline-block;
+    transition: transform .4s cubic-bezier(0, 1, 0, 0);
+    border: solid 1px;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+.btn-upcoming-calendar {
+    font-size: 13px;
+    font-family: 'FSAlbertBold', sans-serif;
+    text-align: center;
+    padding: .7rem;
+    width: 145px;
+    height: 37px;
+    display: inline-block;
+    box-shadow: 0px 0px 20px rgba(20, 144, 223, 0.38);
+    border-radius: 29px;
+    transition: transform .4s cubic-bezier(0, 1, 0, 0);
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+
+.btn-calendar {
+    width: 180px !important;
+    height: 30px !important;
+    font-size: 13px !important;
+    color: $color-white !important;
+    text-transform: uppercase;
+    background-color:$color-blue-10 !important;
+    padding: 10px 12px !important;
+    display: table !important;
+    text-align: center;
+    border: 0 !important;
+    border-radius: 29px !important;
+    box-shadow: 0px 0px 20px rgba(20, 144, 223, 0.38) !important;
+    transition: transform .4s ease-in;
+
+    &:hover {
+        transform: scale(1.03);
+        font-size: 13px;
+
+    }
+
+    @include media460 {
+        width: 260px;
+    }
+}
+
+.addeventatc .addeventatc_icon {
+    display: none;
+}
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .btn-banner {
+        font-family: 'OpenSansBold', sans-serif;
+    }
+}

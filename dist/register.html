@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <?php $site = $this->session->userdata('site_config'); ?>
+    <title><?php echo $site->name; ?> | Register</title> -->
+
+    <!-- CS -->
+    <link rel="stylesheet" href="/file/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/dist/file/css/app.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- CS -->
+</head>
+
+<body>
+    <div class="nav_mirror"></div>
+    <header class="header" id="header">
+        <nav class="nav-desktop">
+            <div class="container">
+                <div class="row flex-start-wrap ie-mt-2">
+                    <div class="col-md-12 col-lg-12 nav-desktop__flex-cntr nav-desktop__mobile">
+                        <a href="/landing"><img src="/file/image/logo-vistream.png" alt="Logo"
+                                class="nav-desktop__logo nav-desktop__logo-left1"></a>
+                        <a href="/landing"><img src="/file/image/logo2.png" alt="Logo"
+                                class="nav-desktop__logo nav-desktop__logo-left2"></a>
+                        <a href="/landing"><img src="/file/image/logo3.png" alt="Logo"
+                                class="nav-desktop__logo nav-desktop__logo-left3"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main form-pages">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 flex-column-center">
+                    <!-- <h2 class="form-card__title">
+                        <?=$this->input->get("p",true)?'{'.$this->input->get("p").'}':'{register}'?> 
+                    </h2> -->
+                    <div class="form-card-register">
+                        <form action="" id="register_form" method="post">
+
+                            <!-- [FIRST NAME] -->
+                            <div class="form-group">
+                                <label class="form-card__label">First Name</label>
+                                <input class="form-control form-card__input" type="text" id="first_name"
+                                    name="first_name" maxlength="50" required>
+                            </div>
+                            <!-- [FIRST NAME] -->
+
+                            <!-- [Last Name] -->
+                            <div class="form-group">
+                                <label class="form-card__label">Last Name</label>
+                                <input class="form-control form-card__input" type="text" id="last_name" name="last_name"
+                                    maxlength="50" required>
+                            </div>
+                            <!-- [Last Name] -->
+
+                            <!-- [EMAIL] -->
+                            <div class="form-group">
+                                <label class="form-card__label">E-mail</label>
+                                <input class="form-control form-card__input required" type="email" id="email"
+                                    name="email" value="<?=$this->session->userdata('email_remember'); ?>"
+                                    maxlength="50" required>
+                            </div>
+                            <!-- [EMAIL] -->
+
+                            <!-- [COUNTRY] -->
+                            <div class="form-group">
+                                <label class="form-card__label">Country</label>
+                                <select class="form-control form-card__input" name="country" id="country" required>
+                                    <option value="" selected disabled></option>
+                                    <?php countryDropdown("{select_country}"); ?>
+                                </select>
+                            </div>
+                            <!-- [COUNTRY] -->
+
+                            <!-- [Affiliation] -->
+                            <div class="form-group country_saudi_arabia required">
+                                <label class="form-card__label">SCFHS Number</label>
+                                <input class="form-control form-card__input" type="text" id="extra4" name="extra4"
+                                    maxlength="50" required>
+                            </div>
+                            <!-- [Affiliation] -->
+
+                            <!-- [Affiliation] -->
+                            <div class="form-group">
+                                <label class="form-card__label">Affiliation</label>
+                                <input class="form-control form-card__input" type="text" id="extra1" name="extra1"
+                                    maxlength="50" required>
+                            </div>
+                            <!-- [Affiliation] -->
+
+                            <!-- [SPECIALITY] -->
+                            <div class="form-group">
+                                <label class="form-card__label">Speciality</label>
+                                <select class="form-control form-card__input" name="speciality" id="speciality"
+                                    required>
+                                    <option value="" selected disabled></option>
+                                    <?php specialityDropdown("{select_specialty}"); ?>
+                                </select>
+                            </div>
+                            <!-- [SPECIALITY] -->
+
+                            <!--[OTHER SPECIALITY]-->
+                            <div class="form-group" id="otherspeciality" style="display:none;">
+                                <label class="form-card__label">Lainnya</label>
+                                <input class="form-control form-card__input" type="text" placeholder="Please specify"
+                                    id="extra2" name="extra2" maxlength="50">
+                            </div>
+                            <!--[OTHER SPECIALITY]-->
+
+
+                            <!-- [Affiliation] -->
+                            <div class="form-group">
+                                <label class="form-card__label">Mobile Number</label>
+                                <input class="form-control form-card__input" type="tel" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="extra3" name="extra3"
+                                    maxlength="50" required>
+                            </div>
+                            <!-- [Affiliation] -->
+
+
+                            <!-- [CHECKBOXS] -->
+                            <div class="orm-card__checkboxs mt-sm">
+                                <!-- [FIRST CHECKBOX] -->
+                                <!-- <div class="form-group mr-sm">
+                                    <label class="checkbox-label register-label" for="cb-first">
+                                        <input id="cb-first" name="cb-first" type="checkbox" class="click-checkbox-3"
+                                            value="1" required>
+                                        <span class="form-card__span"></span>
+                                        <span class="form-card__text">
+                                            <b> Privacy Statement:</b> Vistream (the webinar platform) ensures any data
+                                            you provide is held securely. We will use your data to register you for the
+                                            webinar and get your feedback on the quality of the session. You can read
+                                            Pfizer Privacy Policy by <b>clicking here</b> and select your country.
+                                        </span>
+                                    </label>
+                                </div> -->
+                                <!-- [FIRST CHECKBOX] -->
+
+                            </div>
+                            <!-- [CHECKBOXS] -->
+
+
+                            <!-- REGISTER FORM NAME -->
+                            <input type="hidden" id="form_name" name="form_name" value="latamariaacademy" />
+                            <!-- REGISTER FROM NAME -->
+
+                            <!-- REGISTER PAGE NAME -->
+                            <input type="hidden" id="page" name="page"
+                                value="<?=$this->input->get("p",true)?$this->input->get("p"):''?>" />
+                            <!-- REGISTER PAGE NAME -->
+
+                            <!-- [BUTTON] -->
+                            <div class="">
+                                <button class="btn-animation-1 btn-register mt-xs">REGISTER
+                                    <i class="fas fa-arrow-right btn-register__banner__icon"></i></a>
+                                </button>
+                                <P class="form-card__description">
+                                    By Clicking the “REGISTER” Button, you agree to receive information and updates on
+                                    this webinar, future events and commercial updates.
+                                </P>
+                            </div>
+                            <!-- [BUTTON] -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer bg-white flex-row-center">
+        <div class="container">
+            <div class="row ie-mt-2">
+                <div class="col-md-12 col-sm-12 flex-start-sm-colmn">
+                    <img src="/file/image/logo-vistream.png" class="footer__logo1">
+                    <img src="/file/image/logo4.png" class="footer__logo4">
+                    <img src="/file/image/logo2.png" class="footer__logo2">
+                    <img src="/file/image/logo3.png" class="footer__logo3">
+
+                </div>
+                <!-- <div class="col-md-6 col-sm-12 flex-start-sm-colmn">
+                    <p class="footer__info">
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-12 flex-end-sm-colmn">
+                    <p class="footer__code">
+                    </p>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/file/js/jquery-3.6.0.min.js"></script>
+    <script src="/file/js/bootstrap.min.js"></script>
+
+
+    <script src="/assets/common/general/js/common.js?v=5.2.4"></script>
+    <script src="/assets/common/general/js/functions.js?v=5.1.6"></script>
+
+    <script>
+        function register_check_error() {
+            window.location.href = 'register?session=<?=$session?>&p=more-information';
+            return false;
+        }
+
+        // Speciality değiştiğinde...
+        $("#speciality").change(function () {
+            if ($(this).val() == "other") {
+                $("#otherspeciality").show("fast");
+                $("#extra2").val('');
+                $("#extra2").attr('required', true);
+
+            } else {
+                $("#otherspeciality").hide("fast");
+                $("#extra2").val('null');
+                $("#extra2").attr('required', false);
+            }
+        });
+    </script>
+
+</body>
+
+</html>

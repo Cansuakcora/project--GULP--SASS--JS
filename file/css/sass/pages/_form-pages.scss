@@ -1,0 +1,14 @@
+.form-pages {
+    background-image: radial-gradient(#fff 15%,#d7e4eb 60%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 3em 0 4.5em 0;
+    display: block;
+    min-height: calc(100vh - 200px);
+
+    @media screen and (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+        padding: 3em 0 4.5em 0;
+    }
+}

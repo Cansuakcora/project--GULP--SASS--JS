@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <?php $site = $this->session->userdata('site_config'); ?>
+    <title><?php echo $site->name; ?> | Login</title>  -->
+
+    <!-- CS -->
+    <link rel="stylesheet" href="/file/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/dist/file/css/app.min.css">
+    <!-- CS -->
+</head>
+
+<body>
+
+    <div class="nav_mirror"></div>
+    <header class="header" id="header">
+        <nav class="nav-desktop">
+            <div class="container">
+                <div class="row flex-start-wrap ie-mt-2">
+                    <div class="col-md-12 col-lg-12 nav-desktop__flex-cntr nav-desktop__mobile">
+                        <a href="/landing"><img src="/file/image/logo-vistream.png" alt="Logo"
+                                class="nav-desktop__logo nav-desktop__logo-left1"></a>
+                        <a href="/landing"><img src="/file/image/logo2.png" alt="Logo"
+                                class="nav-desktop__logo nav-desktop__logo-left2"></a>
+                        <a href="/landing"><img src="/file/image/logo3.png" alt="Logo"
+                                class="nav-desktop__logo nav-desktop__logo-left3"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main form-pages">
+        <div class="container">
+            <div class="row pb-md-5">
+                <div class="col-sm-12 flex-column-center">
+                    <div class="form-card">
+                        <h2 class="form-card__title">
+                            LOGIN
+                        </h2>
+                        <div class="form-card__border"></div>
+                        <form action="" id="login_form" method="post">
+                            <!-- [EMAIL] -->
+                            <div class="form-group">
+                                <input class="form-control form-card__input" type="email" id=" email" name="email"
+                                    placeholder="Email" required style="padding-left: 2.2rem;">
+                                <img src="/file/image/icons/icon-mail.png" class="form-card__icon">
+                            </div>
+                            <!-- [EMAIL] -->
+
+                            <!-- HIDE PASWWORD -->
+                            <input type="hidden" name="password" value="vs2021" />
+                            <!-- HIDE PASWWORD -->
+
+                            <!-- [CHECKBOXS] -->
+                            <div class="orm-card__checkboxs mt-sm">
+                                <!-- [FIRST CHECKBOX] -->
+                                <div class="form-group">
+                                    <label class="checkbox-label register-label" for="cb-first">
+                                        <input id="cb-first" name="cb-first" type="checkbox" class="click-checkbox-3"
+                                            value="1" required>
+                                        <span class="form-card__span"></span>
+                                        <span class="form-card__text">
+                                            I confirm that I am a healthcare professional
+                                        </span>
+                                    </label>
+                                </div>
+                                <!-- [FIRST CHECKBOX] -->
+
+                                <!-- [SECOND CHECKBOX] -->
+                                <div class="form-group">
+                                    <label class="checkbox-label register-label" for="cb-second">
+                                        <input id="cb-second" name="cb-second" type="checkbox" class="click-checkbox-3"
+                                            value="1" required>
+                                        <span class="form-card__span"></span>
+                                        <span class="form-card__text">
+                                            By clicking “login” you are confirming that you are a healthcare
+                                            professional and the information you have provided above is correct. You
+                                            agree that the use of your information at this event and that the recorded
+                                            session will be sent with Pfizer’s terms of use and privacy policy. You
+                                            agree to receive information and updates on Pfizer Webinars.
+                                        </span>
+                                    </label>
+                                </div>
+                                <!-- [SECOND CHECKBOX] -->
+
+                            </div>
+                            <!-- [CHECKBOXS] -->
+
+
+                            <!-- [BUTTON] -->
+                            <div class="">
+                                <button class="btn-animation-1 btn-login-page">LOGIN
+                                </button>
+                            </div>
+                            <!-- [BUTTON] -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer bg-white flex-row-center">
+        <div class="container">
+            <div class="row ie-mt-2">
+                <div class="col-md-12 col-sm-12 flex-start-sm-colmn">
+                    <img src="/file/image/logo-vistream.png" class="footer__logo1">
+                    <img src="/file/image/logo4.png" class="footer__logo4">
+                    <img src="/file/image/logo2.png" class="footer__logo2">
+                    <img src="/file/image/logo3.png" class="footer__logo3">
+
+                </div>
+                <!-- <div class="col-md-6 col-sm-12 flex-start-sm-colmn">
+                    <p class="footer__info">
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-12 flex-end-sm-colmn">
+                    <p class="footer__code">
+                    </p>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/file/js/jquery-3.6.0.min.js"></script>
+    <script src="/file/js/bootstrap.min.js"></script>
+
+    <script src="/assets/common/general/js/common.js?v=5.2.4"></script>
+    <script src="/assets/common/general/js/functions.js?v=5.1.6"></script>
+</body>
+
+</html>
