@@ -10,4 +10,5 @@
 
 #LANDING-MOBILE
 
-![mobile-landing](https://user-images.githubusercontent.com/36992449/181915133-b20b0919-6e5e-4660-baff-1e93b0e19ab6.png)
+![mobile-landing](https://user-images.githubusercontent.com/36992449/181915133-b20b0919-6e5e-4660-baff-1e93b0e19ab6.png) ![mobile-landing2](https://user-images.githubusercontent.com/36992449/181915202-8eeb7abf-2bb1-4c48-9195-61b3d4b49f8c.png)
+
