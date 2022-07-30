@@ -1,8 +1,8 @@
 # LANDING PAGE
 
-![landing1](https://user-images.githubusercontent.com/36992449/181915042-9f29842e-b8d5-4b44-85d2-03006e8c9349.png)
-
 ![landing2](https://user-images.githubusercontent.com/36992449/181915099-e8b5d95d-b137-4f37-8a6b-28f59e75fb09.png)
+
+![landing1](https://user-images.githubusercontent.com/36992449/181915042-9f29842e-b8d5-4b44-85d2-03006e8c9349.png)
 
 #AGENDA PAGE
 
@@ -10,5 +10,5 @@
 
 #LANDING-MOBILE
 
-![mobile-landing](https://user-images.githubusercontent.com/36992449/181915133-b20b0919-6e5e-4660-baff-1e93b0e19ab6.png) ![mobile-landing2](https://user-images.githubusercontent.com/36992449/181915202-8eeb7abf-2bb1-4c48-9195-61b3d4b49f8c.png)
+![mobile-landing](https://user-images.githubusercontent.com/36992449/181915133-b20b0919-6e5e-4660-baff-1e93b0e19ab6.png)    ![mobile-landing2](https://user-images.githubusercontent.com/36992449/181915202-8eeb7abf-2bb1-4c48-9195-61b3d4b49f8c.png)
 
